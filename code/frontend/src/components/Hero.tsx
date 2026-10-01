@@ -16,7 +16,7 @@ export default function Hero() {
       }
       const split = new SplitType(".hero-headline", { types: "lines", lineClass: "hero-line" });
       gsap.set(split.lines, { yPercent: 110 });
-      const tl = gsap.timeline({ defaults: { ease: "var(--ease-out)".includes("var") ? "expo.out" : "expo.out" } });
+      const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
       tl.to(".hero-eyebrow", { opacity: 1, y: 0, duration: 0.6 })
         .to(split.lines, { yPercent: 0, duration: 1, stagger: 0.12 }, "-=0.3")
         .to(".hero-reveal", { opacity: 1, y: 0, duration: 0.8, stagger: 0.12 }, "-=0.5")
