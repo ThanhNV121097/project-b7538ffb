@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import SplitType from "split-type";
+import { gsap } from "./gsapSetup";
 import { T } from "../editable";
 
 export default function Hero() {
