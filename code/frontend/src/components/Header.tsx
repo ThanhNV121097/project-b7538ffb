@@ -19,7 +19,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-page px-[var(--gutter)] flex items-center justify-between">
-        <T k="site.name" as="a" href="/" className="font-display text-lg tracking-tight" style={{ fontWeight: "var(--weight-display)" }} />
+        <T k="site.name" as="a" href="/" className="font-display [font-weight:var(--weight-display)] text-lg tracking-tight" />
         <nav className="hidden md:flex items-center gap-8 text-sm text-ink-soft">
           {links.map((l, i) => (
             <T key={i} k={`nav.links.${i}.label`} as="a" href={l.href} className="hover:text-ink transition-colors duration-fast" />
