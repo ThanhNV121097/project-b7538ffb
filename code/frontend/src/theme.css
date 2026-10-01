@@ -2,23 +2,21 @@
    these, so the owner changes the whole site by changing a value here — in
    the Studio, without a rebuild. Components never carry a raw colour. */
 :root {
-  --ground: #0D0C0B;
-  --surface: #171513;
-  --ink: #F3EFE8;
-  --ink-soft: #A79F93;
-  --accent: #C98A4B;
-  --accent-ink: #0D0C0B;
-  --line: rgba(243, 239, 232, 0.12);
+  --ground: #121212;
+  --surface: #1B1B1A;
+  --ink: #F3F0E9;
+  --ink-soft: #A79F91;
+  --accent: #D98A2B;
+  --accent-ink: #121212;
+  --line: rgba(243, 240, 233, 0.12);
 
-  --font-display: "Syne";
+  --font-display: "Fraunces";
   --font-body: "Inter";
-  --weight-display: 700;
+  --weight-display: 560;
   --tracking-display: -0.01em;
-  --weight-body: 400;
-  --weight-medium: 500;
 
-  --radius: 18px;
-  --radius-sm: 8px;
+  --radius: 4px;
+  --radius-sm: 2px;
   --radius-pill: 999px;
 
   /* Spacing, shadow and motion: one scale each, so a story can always name a
@@ -32,18 +30,13 @@
   --space-12: 48px;
   --space-16: 64px;
   --space-24: 96px;
-  --space-32: 128px;
-
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 24px 60px -24px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 80px -8px rgba(201, 138, 75, 0.35);
-
+  --shadow-md: 0 24px 60px -24px rgba(0, 0, 0, 0.7);
   --duration-fast: 150ms;
   --duration-base: 400ms;
   --duration-slow: 900ms;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
 
   --page: 1280px;
-  --gutter: clamp(20px, 5.5vw, 80px);
+  --gutter: clamp(20px, 6vw, 88px);
 }
