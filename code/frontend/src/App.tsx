@@ -23,6 +23,7 @@ export default function App() {
         <Hero />
         <Marquee />
         <Showcase />
+        <ImageStrip />
         <Catalogue />
         <Trust />
         <Visit />
