@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
 import Showcase from "./components/Showcase";
+import ImageStrip from "./components/ImageStrip";
 import Catalogue from "./components/Catalogue";
 import Trust from "./components/Trust";
 import Visit from "./components/Visit";
