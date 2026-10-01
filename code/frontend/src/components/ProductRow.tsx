@@ -36,7 +36,7 @@ export default function ProductRow({ id, eyebrowKey, titleKey, subKey, itemsKey,
             <span className="h-px w-8 bg-accent" />
             <T k={eyebrowKey} as="p" className="text-sm uppercase tracking-[0.18em] text-accent" />
           </div>
-          <T k={titleKey} as="h2" className="mt-[var(--space-3)] font-display text-[clamp(28px,3.6vw,48px)] max-w-[20ch]" style={{ fontWeight: "var(--weight-display)" }} />
+          <T k={titleKey} as="h2" className="mt-[var(--space-3)] font-display [font-weight:var(--weight-display)] text-[clamp(28px,3.6vw,48px)] max-w-[20ch]" />
           <T k={subKey} as="p" className="mt-[var(--space-4)] text-ink-soft max-w-[52ch]" />
           <ul className="mt-[var(--space-8)] divide-y divide-line border-t border-line">
             {items.map((it, i) => (
