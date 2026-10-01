@@ -36,8 +36,7 @@ export default function Hero() {
           </div>
           <h1
             ref={headlineRef}
-            className="mt-[var(--space-6)] font-display leading-[0.98] text-[clamp(44px,6.6vw,96px)] whitespace-pre-line"
-            style={{ fontWeight: "var(--weight-display)", letterSpacing: "var(--tracking-display)" }}
+            className="mt-[var(--space-6)] font-display [font-weight:var(--weight-display)] [letter-spacing:var(--tracking-display)] leading-[0.98] text-[clamp(44px,6.6vw,96px)] whitespace-pre-line"
           >
             <T k="hero.headline" />
           </h1>
