@@ -40,7 +40,7 @@ export default function CasesSection() {
           <span className="h-px w-8 bg-accent" />
           <T k="cases.eyebrow" as="p" className="text-sm uppercase tracking-[0.18em] text-accent" />
         </div>
-        <T k="cases.title" as="h2" className="mt-[var(--space-3)] font-display text-[clamp(32px,4.2vw,56px)] max-w-[18ch]" style={{ fontWeight: "var(--weight-display)" }} />
+        <T k="cases.title" as="h2" className="mt-[var(--space-3)] font-display [font-weight:var(--weight-display)] text-[clamp(32px,4.2vw,56px)] max-w-[18ch]" />
         <T k="cases.sub" as="p" className="mt-[var(--space-4)] text-ink-soft max-w-[60ch]" />
       </div>
       <div ref={trackRef} className="mt-[var(--space-12)] flex gap-[var(--space-6)] px-[var(--gutter)] w-max">
