@@ -1,75 +1,65 @@
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 import SplitType from "split-type";
-import { gsap } from "./gsapSetup";
-import { T } from "../editable";
+import { T, useContent } from "../editable";
 
 export default function Hero() {
+  const headlineRef = useRef<HTMLHeadingElement>(null);
   const root = useRef<HTMLDivElement>(null);
+  const headline = useContent<string>("hero.headline");
 
-  useGSAP(
-    () => {
-      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduced) {
+  useEffect(() => {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const ctx = gsap.context(() => {
+      if (reduce || !headlineRef.current) {
         gsap.set(".hero-reveal", { opacity: 1, y: 0 });
         return;
       }
-      const split = new SplitType(".hero-headline", { types: "lines", lineClass: "hero-line" });
-      gsap.set(split.lines, { yPercent: 110 });
+      const split = new SplitType(headlineRef.current, { types: "lines" });
+      gsap.set(split.lines, { yPercent: 110, opacity: 0 });
       const tl = gsap.timeline({ defaults: { ease: "expo.out" } });
-      tl.to(".hero-eyebrow", { opacity: 1, y: 0, duration: 0.6 })
-        .to(split.lines, { yPercent: 0, duration: 1, stagger: 0.12 }, "-=0.3")
-        .to(".hero-reveal", { opacity: 1, y: 0, duration: 0.8, stagger: 0.12 }, "-=0.5")
-        .fromTo(".hero-image", { scale: 1.15, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2, ease: "power2.out" }, "-=1");
-
-      gsap.to(".hero-image img", {
-        yPercent: 10,
-        ease: "none",
-        scrollTrigger: { trigger: root.current, start: "top top", end: "bottom top", scrub: true },
-      });
-    },
-    { scope: root },
-  );
+      tl.to(split.lines, { yPercent: 0, opacity: 1, duration: 1.1, stagger: 0.12 })
+        .to(".hero-reveal", { opacity: 1, y: 0, duration: 0.8, stagger: 0.1 }, "-=0.5")
+        .fromTo(".hero-photo", { scale: 1.12, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.3, ease: "power3.out" }, "-=1.1");
+    }, root);
+    return () => ctx.revert();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [headline]);
 
   return (
-    <section ref={root} className="relative pt-[160px] pb-[var(--space-24)] overflow-hidden">
-      <div className="mx-auto max-w-page px-[var(--gutter)] grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-[var(--space-16)] items-center">
+    <div ref={root} className="relative pt-[calc(var(--space-24)+var(--space-16))] pb-[var(--space-16)] overflow-hidden">
+      <div className="mx-auto max-w-page px-[var(--gutter)] grid md:grid-cols-[1.1fr_0.9fr] gap-[var(--space-12)] items-end">
         <div>
-          <T
-            k="hero.eyebrow"
-            as="p"
-            className="hero-eyebrow opacity-0 translate-y-3 text-sm tracking-[0.2em] uppercase text-accent font-medium mb-[var(--space-6)]"
-          />
-          <T
-            k="hero.headline"
-            as="h1"
-            className="hero-headline text-[clamp(44px,6.4vw,92px)] max-w-[16ch] overflow-hidden"
-          />
+          <div className="hero-reveal flex items-center gap-3 opacity-0 translate-y-[var(--space-3)]">
+            <span className="h-px w-8 bg-accent" />
+            <T k="hero.eyebrow" as="p" className="text-sm uppercase tracking-[0.18em] text-accent" />
+          </div>
+          <h1
+            ref={headlineRef}
+            className="mt-[var(--space-6)] font-display leading-[0.98] text-[clamp(44px,6.6vw,96px)] whitespace-pre-line"
+            style={{ fontWeight: "var(--weight-display)", letterSpacing: "var(--tracking-display)" }}
+          >
+            <T k="hero.headline" />
+          </h1>
           <T
             k="hero.sub"
             as="p"
-            className="hero-reveal opacity-0 translate-y-3 mt-[var(--space-8)] text-lg text-ink-soft max-w-[48ch]"
+            className="hero-reveal mt-[var(--space-6)] text-lg text-ink-soft max-w-[46ch] opacity-0 translate-y-[var(--space-3)]"
           />
-          <div className="hero-reveal opacity-0 translate-y-3 mt-[var(--space-10)] flex flex-wrap gap-4">
+          <div className="hero-reveal mt-[var(--space-8)] flex flex-wrap items-center gap-4 opacity-0 translate-y-[var(--space-3)]">
             <T
               k="hero.cta.label"
               as="a"
-              href="#catalogue"
-              className="inline-block rounded-[var(--radius-pill)] bg-accent px-7 py-3.5 text-accent-ink font-medium shadow-[var(--shadow-sm)] hover:opacity-90 transition-opacity duration-[var(--duration-fast)]"
+              href="#cases"
+              className="rounded-sm bg-accent text-accent-ink px-6 py-3 font-medium hover:brightness-110 transition-[filter] duration-fast"
             />
-            <T
-              k="hero.cta2.label"
-              as="a"
-              href="#visit"
-              className="inline-block rounded-[var(--radius-pill)] border border-line px-7 py-3.5 text-ink hover:border-accent transition-colors duration-[var(--duration-fast)]"
-            />
+            <T k="hero.cta2.label" as="a" href="#visit" className="text-sm text-ink-soft hover:text-ink transition-colors duration-fast underline underline-offset-4" />
           </div>
         </div>
-        <div className="hero-image relative rounded-[var(--radius)] overflow-hidden shadow-[var(--shadow-md)]">
-          <img src="/images/hero-iphone.jpg" alt="iPhone in a leather case" className="w-full h-[560px] object-cover" />
-          <div className="absolute inset-0 shadow-[var(--shadow-glow)] pointer-events-none" />
+        <div className="hero-photo opacity-0 rounded shadow-md overflow-hidden aspect-[4/5]">
+          <img src="/images/hero.jpg" alt="iPhone in a leather case, lit against a dark background" className="h-full w-full object-cover" />
         </div>
       </div>
-    </section>
+    </div>
   );
 }
