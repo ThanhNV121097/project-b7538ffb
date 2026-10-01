@@ -11,7 +11,7 @@ export default function Visit() {
             <span className="h-px w-8 bg-accent" />
             <T k="visit.eyebrow" as="p" className="text-sm uppercase tracking-[0.18em] text-accent" />
           </div>
-          <T k="visit.title" as="h2" className="mt-[var(--space-3)] font-display text-[clamp(28px,3.6vw,48px)] max-w-[18ch]" style={{ fontWeight: "var(--weight-display)" }} />
+          <T k="visit.title" as="h2" className="mt-[var(--space-3)] font-display [font-weight:var(--weight-display)] text-[clamp(28px,3.6vw,48px)] max-w-[18ch]" />
           <T k="visit.sub" as="p" className="mt-[var(--space-4)] text-ink-soft max-w-[52ch]" />
           <T k="visit.address" as="p" className="mt-[var(--space-8)] font-display text-xl" style={{ fontWeight: "var(--weight-display)" }} />
           <T
