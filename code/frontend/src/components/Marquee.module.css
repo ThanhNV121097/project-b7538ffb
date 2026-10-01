@@ -1,0 +1,36 @@
+.band {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 26s linear infinite;
+}
+
+.item {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  font-size: clamp(20px, 2.6vw, 34px);
+  color: var(--ink-soft);
+  padding: var(--space-6) var(--space-8);
+  white-space: nowrap;
+}
+
+.item::after {
+  content: "·";
+  margin-left: var(--space-8);
+  color: var(--accent);
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+}
