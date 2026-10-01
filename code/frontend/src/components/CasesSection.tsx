@@ -50,7 +50,7 @@ export default function CasesSection() {
               <img src="/images/cases.jpg" alt={it.name} className="h-full w-full object-cover" />
             </div>
             <div className="p-[var(--space-4)]">
-              <T k={`cases.items.${i}.name`} as="h3" className="font-display text-lg" style={{ fontWeight: "var(--weight-display)" }} />
+              <T k={`cases.items.${i}.name`} as="h3" className="font-display [font-weight:var(--weight-display)] text-lg" />
               <T k={`cases.items.${i}.detail`} as="p" className="mt-1 text-sm text-ink-soft" />
               <T k={`cases.items.${i}.price`} as="p" className="mt-[var(--space-3)] text-accent font-medium" />
             </div>
