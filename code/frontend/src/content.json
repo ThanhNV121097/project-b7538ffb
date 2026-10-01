@@ -1,11 +1,83 @@
 {
-  "site": { "name": "Your business" },
-  "nav": { "links": [{ "label": "Home", "href": "/" }], "cta": { "label": "Get in touch", "href": "#contact" } },
-  "hero": {
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more.",
-    "cta": { "label": "Get in touch", "href": "#contact" }
+  "site": { "name": "Tony Apple" },
+  "nav": {
+    "links": [
+      { "label": "Catalogue", "href": "#catalogue" },
+      { "label": "Showcase", "href": "#showcase" },
+      { "label": "Visit", "href": "#visit" }
+    ],
+    "cta": { "label": "Get directions", "href": "#visit" }
   },
-  "footer": { "line": "Your business · District 1, Saigon" }
+  "hero": {
+    "eyebrow": "Genuine Apple accessories",
+    "headline": "Carry what Apple actually makes.",
+    "sub": "Tony Apple stocks genuine Apple accessories in Hà Nội — cases, cables, watch bands and chargers, checked and in stock before you walk in.",
+    "cta": { "label": "See the catalogue", "href": "#catalogue" },
+    "cta2": { "label": "Find the shop", "href": "#visit" }
+  },
+  "marquee": {
+    "items": ["Cases", "MagSafe", "Watch bands", "AirPods", "Chargers", "Cables", "Screen protection", "Adapters"]
+  },
+  "showcase": {
+    "eyebrow": "The shelf",
+    "heading": "Four categories, one counter.",
+    "steps": [
+      {
+        "tag": "01 — Cases",
+        "title": "Cases that fit on the first try.",
+        "body": "Silicone, leather and clear, sized for the exact iPhone you own — tried on your phone before you pay for it.",
+        "image": "/images/hero-iphone.jpg"
+      },
+      {
+        "tag": "02 — Charging",
+        "title": "Cables and bricks that actually charge fast.",
+        "body": "MagSafe chargers, USB-C cables and wall adapters, the same parts Apple sells, no unmarked knockoffs.",
+        "image": "/images/charger.jpg"
+      },
+      {
+        "tag": "03 — Audio",
+        "title": "AirPods and the case that protects them.",
+        "body": "AirPods, AirPods Pro and the silicone cases that keep them out of your bag's lint.",
+        "image": "/images/airpods.jpg"
+      },
+      {
+        "tag": "04 — Watch",
+        "title": "A band for every strap size.",
+        "body": "Sport, leather and metal Apple Watch bands, measured against your wrist before you buy.",
+        "image": "/images/watch-band.jpg"
+      }
+    ]
+  },
+  "catalogue": {
+    "eyebrow": "On the shelf today",
+    "heading": "A sample of what's in stock.",
+    "note": "Sample prices — ask at the counter for today's stock and price.",
+    "items": [
+      { "name": "MagSafe Charger", "detail": "Apple 15W wireless charger", "price": "750.000₫" },
+      { "name": "Leather Case, iPhone 15/16", "detail": "Apple leather case, per colour", "price": "1.290.000₫" },
+      { "name": "AirPods Pro (2nd gen)", "detail": "USB-C charging case", "price": "5.990.000₫" },
+      { "name": "Apple Watch Sport Band", "detail": "Per size, S/M or M/L", "price": "990.000₫" },
+      { "name": "USB-C to USB-C Cable, 1m", "detail": "Apple braided cable", "price": "490.000₫" },
+      { "name": "20W USB-C Power Adapter", "detail": "Apple wall charger", "price": "590.000₫" }
+    ]
+  },
+  "trust": {
+    "heading": "Why buy the accessory here, not the case on the sidewalk stall.",
+    "points": [
+      { "title": "Genuine stock only", "body": "Every box opened in front of you, serial numbers that match Apple's own records." },
+      { "title": "Fit, checked at the counter", "body": "Cases and bands tried on your exact device before you pay." },
+      { "title": "Walk-in warranty help", "body": "Keep your receipt — faulty accessories get swapped at the counter, no shipping back and forth." }
+    ]
+  },
+  "visit": {
+    "eyebrow": "Visit",
+    "heading": "19 Duy Tân, Hà Nội.",
+    "body": "Drop by to compare a case against your phone or a band against your wrist — the counter is set up for exactly that.",
+    "address": "19 Duy Tân, Hà Nội",
+    "cta": { "label": "Get directions", "href": "https://maps.google.com/?q=19+Duy+T%C3%A2n+H%C3%A0+N%E1%BB%99i" }
+  },
+  "footer": {
+    "line": "Tony Apple · 19 Duy Tân, Hà Nội",
+    "sub": "Genuine Apple accessories, sold off the shelf."
+  }
 }
