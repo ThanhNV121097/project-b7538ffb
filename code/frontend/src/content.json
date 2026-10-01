@@ -2,82 +2,66 @@
   "site": { "name": "Tony Apple" },
   "nav": {
     "links": [
-      { "label": "Catalogue", "href": "#catalogue" },
-      { "label": "Showcase", "href": "#showcase" },
-      { "label": "Visit", "href": "#visit" }
+      { "label": "Cases", "href": "#cases" },
+      { "label": "Power & Cables", "href": "#power" },
+      { "label": "Audio", "href": "#audio" },
+      { "label": "Visit the shop", "href": "#visit" }
     ],
-    "cta": { "label": "Get directions", "href": "#visit" }
+    "cta": { "label": "Shop the range", "href": "#cases" }
   },
   "hero": {
-    "eyebrow": "Genuine Apple accessories",
-    "headline": "Carry what Apple actually makes.",
-    "sub": "Tony Apple stocks genuine Apple accessories in Hà Nội — cases, cables, watch bands and chargers, checked and in stock before you walk in.",
-    "cta": { "label": "See the catalogue", "href": "#catalogue" },
-    "cta2": { "label": "Find the shop", "href": "#visit" }
-  },
-  "marquee": {
-    "items": ["Cases", "MagSafe", "Watch bands", "AirPods", "Chargers", "Cables", "Screen protection", "Adapters"]
-  },
-  "showcase": {
-    "eyebrow": "The shelf",
-    "heading": "Four categories, one counter.",
-    "steps": [
-      {
-        "tag": "01 — Cases",
-        "title": "Cases that fit on the first try.",
-        "body": "Silicone, leather and clear, sized for the exact iPhone you own — tried on your phone before you pay for it.",
-        "image": "/images/hero-iphone.jpg"
-      },
-      {
-        "tag": "02 — Charging",
-        "title": "Cables and bricks that actually charge fast.",
-        "body": "MagSafe chargers, USB-C cables and wall adapters, the same parts Apple sells, no unmarked knockoffs.",
-        "image": "/images/charger.jpg"
-      },
-      {
-        "tag": "03 — Audio",
-        "title": "AirPods and the case that protects them.",
-        "body": "AirPods, AirPods Pro and the silicone cases that keep them out of your bag's lint.",
-        "image": "/images/airpods.jpg"
-      },
-      {
-        "tag": "04 — Watch",
-        "title": "A band for every strap size.",
-        "body": "Sport, leather and metal Apple Watch bands, measured against your wrist before you buy.",
-        "image": "/images/watch-band.jpg"
-      }
-    ]
-  },
-  "catalogue": {
-    "eyebrow": "On the shelf today",
-    "heading": "A sample of what's in stock.",
-    "note": "Sample prices — ask at the counter for today's stock and price.",
-    "items": [
-      { "name": "MagSafe Charger", "detail": "Apple 15W wireless charger", "price": "750.000₫" },
-      { "name": "Leather Case, iPhone 15/16", "detail": "Apple leather case, per colour", "price": "1.290.000₫" },
-      { "name": "AirPods Pro (2nd gen)", "detail": "USB-C charging case", "price": "5.990.000₫" },
-      { "name": "Apple Watch Sport Band", "detail": "Per size, S/M or M/L", "price": "990.000₫" },
-      { "name": "USB-C to USB-C Cable, 1m", "detail": "Apple braided cable", "price": "490.000₫" },
-      { "name": "20W USB-C Power Adapter", "detail": "Apple wall charger", "price": "590.000₫" }
-    ]
+    "eyebrow": "Genuine Apple accessories, Hanoi",
+    "headline": "Fit your iPhone\nfor the life it lives",
+    "sub": "Cases, chargers, cables and audio — all genuine Apple, chosen and stocked by a shop that only sells what it would buy itself.",
+    "cta": { "label": "Shop the range", "href": "#cases" },
+    "cta2": { "label": "Visit the shop", "href": "#visit" }
   },
   "trust": {
-    "heading": "Why buy the accessory here, not the case on the sidewalk stall.",
-    "points": [
-      { "title": "Genuine stock only", "body": "Every box opened in front of you, serial numbers that match Apple's own records." },
-      { "title": "Fit, checked at the counter", "body": "Cases and bands tried on your exact device before you pay." },
-      { "title": "Walk-in warranty help", "body": "Keep your receipt — faulty accessories get swapped at the counter, no shipping back and forth." }
+    "items": [
+      { "label": "Genuine Apple stock, every box sealed" },
+      { "label": "Try before you buy, in store" },
+      { "label": "On Duy Tân, open every day" }
+    ]
+  },
+  "cases": {
+    "eyebrow": "Cases",
+    "title": "A case for how you actually carry it",
+    "sub": "Clear, silicone, leather and MagSafe — fitted to the current iPhone lineup, nothing generic.",
+    "items": [
+      { "name": "Silicone Case, MagSafe", "detail": "Soft-touch silicone, built-in magnets, nine colours", "price": "890,000₫" },
+      { "name": "Clear Case", "detail": "Scratch-resistant, stays clear, slim fit", "price": "690,000₫" },
+      { "name": "Leather Case, FineWoven", "detail": "FineWoven finish, MagSafe aligned", "price": "1,190,000₫" },
+      { "name": "Rugged Case", "detail": "Drop-tested to 2m, raised bezel", "price": "990,000₫" }
+    ]
+  },
+  "power": {
+    "eyebrow": "Power & cables",
+    "title": "Charge it the way Apple built it to charge",
+    "sub": "MagSafe chargers, USB-C cables and wall adapters — the exact parts your iPhone was tested with.",
+    "items": [
+      { "name": "MagSafe Charger", "detail": "15W, snaps into place", "price": "1,090,000₫" },
+      { "name": "USB-C to USB-C Cable, 1m", "detail": "Braided, fast-charge rated", "price": "490,000₫" },
+      { "name": "20W USB-C Power Adapter", "detail": "Compact wall adapter", "price": "590,000₫" }
+    ]
+  },
+  "audio": {
+    "eyebrow": "Audio",
+    "title": "Sound that pairs the moment you open the case",
+    "sub": "AirPods and AirPods Pro, genuine and in stock — with the case cleaned and checked before it leaves the counter.",
+    "items": [
+      { "name": "AirPods Pro 2", "detail": "Active noise cancellation, USB-C case", "price": "5,490,000₫" },
+      { "name": "AirPods 4", "detail": "Open-ear fit, spatial audio", "price": "3,290,000₫" }
     ]
   },
   "visit": {
     "eyebrow": "Visit",
-    "heading": "19 Duy Tân, Hà Nội.",
-    "body": "Drop by to compare a case against your phone or a band against your wrist — the counter is set up for exactly that.",
+    "title": "Come try it on your own phone",
+    "sub": "Bring your iPhone in — we'll fit the case, test the charger, and you walk out with the right one, not just a boxed guess.",
     "address": "19 Duy Tân, Hà Nội",
     "cta": { "label": "Get directions", "href": "https://maps.google.com/?q=19+Duy+T%C3%A2n+H%C3%A0+N%E1%BB%99i" }
   },
   "footer": {
-    "line": "Tony Apple · 19 Duy Tân, Hà Nội",
-    "sub": "Genuine Apple accessories, sold off the shelf."
+    "line": "Genuine Apple accessories",
+    "address": "19 Duy Tân, Hà Nội"
   }
 }
