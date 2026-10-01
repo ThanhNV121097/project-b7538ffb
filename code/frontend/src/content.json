@@ -1,11 +1,67 @@
 {
-  "site": { "name": "Your business" },
-  "nav": { "links": [{ "label": "Home", "href": "/" }], "cta": { "label": "Get in touch", "href": "#contact" } },
-  "hero": {
-    "eyebrow": "",
-    "headline": "A headline of a few words",
-    "sub": "One line under it, and no more.",
-    "cta": { "label": "Get in touch", "href": "#contact" }
+  "site": { "name": "Tony Apple" },
+  "nav": {
+    "links": [
+      { "label": "Cases", "href": "#cases" },
+      { "label": "Power & Cables", "href": "#power" },
+      { "label": "Audio", "href": "#audio" },
+      { "label": "Visit the shop", "href": "#visit" }
+    ],
+    "cta": { "label": "Shop the range", "href": "#cases" }
   },
-  "footer": { "line": "Your business · District 1, Saigon" }
+  "hero": {
+    "eyebrow": "Genuine Apple accessories, Hanoi",
+    "headline": "Fit your iPhone\nfor the life it lives",
+    "sub": "Cases, chargers, cables and audio — all genuine Apple, chosen and stocked by a shop that only sells what it would buy itself.",
+    "cta": { "label": "Shop the range", "href": "#cases" },
+    "cta2": { "label": "Visit the shop", "href": "#visit" }
+  },
+  "trust": {
+    "items": [
+      { "label": "Genuine Apple stock, every box sealed" },
+      { "label": "Try before you buy, in store" },
+      { "label": "On Duy Tân, open every day" }
+    ]
+  },
+  "cases": {
+    "eyebrow": "Cases",
+    "title": "A case for how you actually carry it",
+    "sub": "Clear, silicone, leather and MagSafe — fitted to the current iPhone lineup, nothing generic.",
+    "items": [
+      { "name": "Silicone Case, MagSafe", "detail": "Soft-touch silicone, built-in magnets, nine colours", "price": "890,000₫" },
+      { "name": "Clear Case", "detail": "Scratch-resistant, stays clear, slim fit", "price": "690,000₫" },
+      { "name": "Leather Case, FineWoven", "detail": "FineWoven finish, MagSafe aligned", "price": "1,190,000₫" },
+      { "name": "Rugged Case", "detail": "Drop-tested to 2m, raised bezel", "price": "990,000₫" }
+    ]
+  },
+  "power": {
+    "eyebrow": "Power & cables",
+    "title": "Charge it the way Apple built it to charge",
+    "sub": "MagSafe chargers, USB-C cables and wall adapters — the exact parts your iPhone was tested with.",
+    "items": [
+      { "name": "MagSafe Charger", "detail": "15W, snaps into place", "price": "1,090,000₫" },
+      { "name": "USB-C to USB-C Cable, 1m", "detail": "Braided, fast-charge rated", "price": "490,000₫" },
+      { "name": "20W USB-C Power Adapter", "detail": "Compact wall adapter", "price": "590,000₫" }
+    ]
+  },
+  "audio": {
+    "eyebrow": "Audio",
+    "title": "Sound that pairs the moment you open the case",
+    "sub": "AirPods and AirPods Pro, genuine and in stock — with the case cleaned and checked before it leaves the counter.",
+    "items": [
+      { "name": "AirPods Pro 2", "detail": "Active noise cancellation, USB-C case", "price": "5,490,000₫" },
+      { "name": "AirPods 4", "detail": "Open-ear fit, spatial audio", "price": "3,290,000₫" }
+    ]
+  },
+  "visit": {
+    "eyebrow": "Visit",
+    "title": "Come try it on your own phone",
+    "sub": "Bring your iPhone in — we'll fit the case, test the charger, and you walk out with the right one, not just a boxed guess.",
+    "address": "19 Duy Tân, Hà Nội",
+    "cta": { "label": "Get directions", "href": "https://maps.google.com/?q=19+Duy+T%C3%A2n+H%C3%A0+N%E1%BB%99i" }
+  },
+  "footer": {
+    "line": "Genuine Apple accessories",
+    "address": "19 Duy Tân, Hà Nội"
+  }
 }
